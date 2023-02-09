@@ -6,6 +6,6 @@ import { CounterApp } from "./CounterApp";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <FirstApp title={1} subtitle={"hola"} />
+    <FirstApp value={"Hola"} />
   </React.StrictMode>
 );
