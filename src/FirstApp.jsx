@@ -5,15 +5,14 @@ import { Fragment } from "react";
 import PropTypes from "prop-types";
 
 export const FirstApp = ({ value }) => {
-  const [counter, setCounter] = useState(0);
+  const [counter, setCounter] = useState(value);
 
   const handleAdd = () => {
-    console.log("+1");
     setCounter(counter + 1);
   };
 
   const handleReset = () => {
-    setCounter(0);
+    setCounter(value);
   };
 
   const handleRest = () => {
@@ -32,7 +31,7 @@ export const FirstApp = ({ value }) => {
         vel ex! Doloribus nisi voluptatibus sed pariatur nostrum voluptate
         soluta!
       </div>
-      <div>
+      <div className="gap-2 flex flex-row">
         <button
           className="bg-blue-600 rounded rounded-full py-1 text-white w-1/3"
           onClick={handleAdd}
